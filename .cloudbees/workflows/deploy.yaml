@@ -1,0 +1,29 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: My workflow1
+on:
+  workflow_dispatch: 
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: newApp4gh
+          artifact-id: c132cfe6-f691-4dda-ad3d-3676a972e39c
+          target-environment: aspm-pre-production
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: newApp24gh
+          artifact-id: 3c15671d-e545-475b-9e6d-6501d26e33d4
+          target-environment: aspm-pre-production
+
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: newApp4gh
+          artifact-id: c132cfe6-f691-4dda-ad3d-3676a972e39c
+          target-environment: aspm-production
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: newApp24gh
+          artifact-id: 3c15671d-e545-475b-9e6d-6501d26e33d4
+          target-environment: aspm-production
