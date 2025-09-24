@@ -9,11 +9,11 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: newApp4gh
-          artifact-id: 25b5ecba-af16-48fb-9a31-c13d0dbea94c
+          artifact-id: 0bbe3b08-5058-42ba-8b8f-6aaf9e6a4bd3
           target-environment: aspm-pre-production
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: newApp4gh
-          artifact-id: 25b5ecba-af16-48fb-9a31-c13d0dbea94c
+          artifact-id: 0bbe3b08-5058-42ba-8b8f-6aaf9e6a4bd3
           target-environment: aspm-production
     
