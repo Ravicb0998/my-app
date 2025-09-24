@@ -16,4 +16,8 @@ jobs:
           labels: newApp4gh
           artifact-id: 0bbe3b08-5058-42ba-8b8f-6aaf9e6a4bd3
           target-environment: aspm-production
-    
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: demo-go
+          artifact-id: ac11a9d2-0e0f-4161-834e-2fe0d48498c1
+          target-environment: aspm-production
